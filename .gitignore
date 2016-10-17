@@ -1,0 +1,4 @@
+.rvmrc
+.idea/
+!artefacts/.keep
+artefacts/*.xml
