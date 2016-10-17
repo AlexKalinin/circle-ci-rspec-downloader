@@ -1,5 +1,5 @@
 require 'nokogiri'
-require 'pry'
+# require 'pry'
 
 $test_cases = []
 
@@ -32,5 +32,4 @@ $test_cases.group_by { |test| test[:name]}.each do |test|
   $result << { name: name, time: total_time / count, count: count, file: file }
 end
 
-binding.pry
 puts $result.sort{ |a, b| a[:time] > b[:time] ? -1 : 1 }
