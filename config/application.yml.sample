@@ -1,0 +1,15 @@
+circle_ci:
+  # Authentication key
+  token: 0000000000000000000000000000000000000000
+
+  # First build number (start from)
+  first_build: 200
+
+  # Last build number (stop on)
+  last_build: 205
+
+  vcs_type: github
+
+  user_name: AlexKalinin
+
+  project: hcm4all

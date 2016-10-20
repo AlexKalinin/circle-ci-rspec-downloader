@@ -1,4 +1,5 @@
 .rvmrc
 .idea/
-!artefacts/.keep
-artefacts/*.xml
+!artifacts/.keep
+artifacts/*.xml
+config/application.yml
