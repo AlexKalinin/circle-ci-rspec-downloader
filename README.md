@@ -1,3 +1,15 @@
-## Simple statistics from RSpec XML files
+# Circle CI rspec.xml files downloader
 
-Put xml files to `./artefacts/` folder from Circle CI -> Artefacts -> rspec.xml
+## Setup
+Read Circle CI documentation: https://circleci.com/docs/api/
+
+Copy `config/application.yml.sample` to `config/application.yml`
+
+Edit `config/application.yml`, paste valid data.
+
+## Usage
+
+To begin import xml files from CircleCI, run:
+```
+rake circleci:download_rspec_reports
+``` 
