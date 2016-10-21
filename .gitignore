@@ -4,3 +4,4 @@
 artifacts/*.xml
 config/application.yml
 db/application.db
+db/application.db-journal
