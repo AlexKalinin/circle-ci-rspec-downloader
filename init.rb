@@ -5,6 +5,7 @@ require 'yaml'
 require 'json'
 require 'open-uri'
 require_all 'src/**/*.rb'
+require 'active_record'
 
 
 class App
@@ -26,5 +27,11 @@ class App
         AppLogger.new
       end
     end
+
+    def migrations_dir
+      File.join(App.root, 'db/migrate')
+    end
   end
 end
+
+ActiveRecord::Base.establish_connection(App.config['db'])

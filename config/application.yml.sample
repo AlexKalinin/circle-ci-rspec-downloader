@@ -13,3 +13,10 @@ circle_ci:
   user_name: AlexKalinin
 
   project: hcm4all
+
+db:
+  adapter: sqlite3
+  database: db/application.db
+  options:
+    charset: 'utf8'
+    collation: 'utf8_unicode_ci'

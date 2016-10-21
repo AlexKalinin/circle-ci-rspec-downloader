@@ -3,3 +3,4 @@
 !artifacts/.keep
 artifacts/*.xml
 config/application.yml
+db/application.db
