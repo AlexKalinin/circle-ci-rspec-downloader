@@ -4,8 +4,9 @@ require 'require_all'
 require 'yaml'
 require 'json'
 require 'open-uri'
-require_all 'src/**/*.rb'
 require 'active_record'
+
+require_all 'src/**/*.rb'
 
 
 class App

@@ -1,20 +1,20 @@
 class Init < ActiveRecord::Migration[4.2]
   def change
-    create_table :test_cases do |t|
+    create_table :builds do |t|
+      t.integer :number
+      t.integer :total_tests
+      t.integer :total_failures
+      t.integer :total_errors
+      t.float :total_time
+      t.timestamp :datetime
+    end
+
+    create_table :specs do |t|
       t.string :name
       t.float :time
       t.string :classname
       t.string :file
-    end
-
-    create_table :builds do |t|
-      t.integer :number
-      t.integer :tests
-      t.integer :failures
-      t.integer :errors
-      t.float :time
-      t.timestamp :datetime
-      t.references :test_cases
+      t.references :builds
     end
   end
 end
