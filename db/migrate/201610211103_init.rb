@@ -6,7 +6,7 @@ class Init < ActiveRecord::Migration[4.2]
       t.integer :total_failures
       t.integer :total_errors
       t.float :total_time
-      t.timestamp :datetime
+      t.timestamp :build_date
     end
 
     create_table :specs do |t|
@@ -14,7 +14,11 @@ class Init < ActiveRecord::Migration[4.2]
       t.float :time
       t.string :classname
       t.string :file
-      t.references :builds
+      t.references :build, index: true
+      t.boolean :failed
+      t.string :failue_message
+      t.string :failue_type
+      t.text :failue_text
     end
   end
 end

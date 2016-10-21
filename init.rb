@@ -5,6 +5,7 @@ require 'yaml'
 require 'json'
 require 'open-uri'
 require 'active_record'
+require 'nokogiri'
 
 require_all 'src/**/*.rb'
 

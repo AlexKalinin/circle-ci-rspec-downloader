@@ -13,3 +13,9 @@ To begin import xml files from CircleCI, run:
 ```
 rake circleci:download_rspec_reports
 ``` 
+
+To load files into SQLite database:
+```
+rake db:migrate
+rake db:load_rspec_reports_from_artifact
+```
