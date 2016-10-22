@@ -1,5 +1,8 @@
 require 'rake'
 require 'pry'
+require 'pry-byebug'
+require 'pry-stack_explorer'
+require 'pry-doc'
 require 'require_all'
 require 'yaml'
 require 'json'
