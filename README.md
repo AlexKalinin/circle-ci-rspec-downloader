@@ -25,3 +25,9 @@ To load additional data to database, user:
 rake circleci:load_additional_data_for_builds
 ```
 This data useful for determine randomly failing specs
+
+
+To build report for random failing tests, execute:
+```
+rake report:random_failing_specs
+```
